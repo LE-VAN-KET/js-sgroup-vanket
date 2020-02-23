@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrapcss.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 1:</span>
+            <span>Viết chương trình Javascript để hiện thị ngày giờ</span>
+            <div class="row ml-3 mw-100">
+                <input class="form-control col col-md-6 mw-100" id="disabledInput" type="text"
+                    placeholder="Disabled input here..." disabled>
+            </div>
+            <p id="date_time"></p>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 2:</span>
+            <span>Viết chương trình để in ra ngày tháng năm theo các định dạng mm-dd-
+                yyyy, mm/dd/yyyy, dd-mm-yyyy, dd/mm/yyyy</span>
+            <div class="row ml-3 mw-100">
+                <input class="form-control col col-md-6 mw-100" id="disabledInput" type="text"
+                    placeholder="Disabled input here..." disabled>
+            </div>
+            <p id="dateformat"></p>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 3:</span>
+            <span>Viết chương trình JavaScript để kiểm tra xem một số nguyên đã cho có
+                chuỗi chữ số tăng hay không</span>
+            <form onsubmit="submitbai3Form(event)">
+                <input type="text" class="form-control mw-100" name="name">
+                <input type="submit" value="result">
+                <span id="result_3" class="ml-3"></span>
+            </form>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 4:</span>
+            <span>Viết một chương trình JavaScript để thay thế mọi ký tự trong một chuỗi đã
+                cho với ký tự theo sau nó trong bảng chữ cái.</span>
+            <form onsubmit="submitbai4Form(event)">
+                <input type="text" class="form-control mw-100" name="name">
+                <input type="submit" value="result">
+                <span id="result_4" class="ml-3"></span>
+            </form>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 5:</span>
+            <span>Viết chương trình JavaScript để tạo chuỗi bằng cách sử dụng ba ký tự ở
+                giữa của một chuỗi có độ dài lẻ. Độ dài chuỗi phải lớn hơn hoặc bằng ba.</span>
+            <form onsubmit="submitbai5Form(event)">
+                <input type="text" class="form-control mw-100" name="name">
+                <input type="submit" value="result">
+                <span id="result_5" class="ml-3"></span>
+            </form>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 6:</span>
+            <span>Viết chương trình hiển thị số xuất hiện nhiều lần nhất trong mảng</span>
+            <form onsubmit="submitbai6Form(event)">
+                <label for="formGroupExampleInput" class="text-muted">Note: Viết cách nhau bởi 1 dấu cách</label>
+                <input type="text" class="form-control mw-100" name="name" id="formGroupExampleInput">
+                <input type="submit" value="result">
+                <span id="result_6" class="ml-3"></span>
+            </form>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 7:</span>
+            <span>Kiểm tra xem chuỗi chứa 'java' hay không</span>
+            <form onsubmit="submitbai7Form(event)">
+                <input type="text" class="form-control mw-100" name="name">
+                <input type="submit" value="result">
+                <span id="result_7" class="ml-3"></span>
+            </form>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 8:</span>
+            <span>Viết một hàm để lấy tên tháng từ một số cụ thể ( ví dụ : 1 – Tháng một )</span>
+            <form onsubmit="submitbai8Form(event)">
+                <input type="text" class="form-control mw-100" name="name">
+                <input type="submit" value="result">
+                <span id="result_8" class="ml-3"></span>
+            </form>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 9:</span>
+            <span>Nhập một chuỗi và tìm từ dài nhất trong chuỗi</span>
+            <form onsubmit="submitbai9Form(event)">
+                <input type="text" class="form-control mw-100" name="name">
+                <input type="submit" value="result">
+                <span id="result_9" class="ml-3"></span>
+            </form>
+        </div>
+
+        <div class="question">
+            <i class="fa fa-cog fa-spin fa-2x fa-fw w-3 text-white"></i>
+            <span class="text-uppercase font-weight-bold text-primary mr-2">bai 10:</span>
+            <span>Nhập 2 số và in ra giá trị là số nguyên tố giữa 2 số đó</span>
+            <form onsubmit="submitbai10Form(event)">
+                <label for="formGroupExampleInput" class="text-muted">Note: Viết cách nhau bởi 1 dấu cách và không được bắt đầu bằng dấu cách</label>
+                <input type="text" class="form-control mw-100" name="name">
+                <input type="submit" value="result">
+                <span id="result_10" class="ml-3"></span>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

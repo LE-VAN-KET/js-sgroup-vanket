@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    font-size: 1rem;
+    background-image: radial-gradient(circle, #0b0eb675 0%, #00d4ff 100%);
+}
+
+.question {
+    border:0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
